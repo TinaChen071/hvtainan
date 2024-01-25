@@ -22,7 +22,7 @@
                 v-for="i in 6" :key="i"
                 class="p-5 text-center bg-gray-100"
                 >
-                    <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-600" />
+                    <input id="comments" aria-describedby="comments-description" name="comments" type="radio" class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-600" />
                 </td>
                 
             </tr>

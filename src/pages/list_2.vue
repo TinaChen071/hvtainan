@@ -9,7 +9,7 @@
             </h3>
             <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-6">
                 <Input label="姓名" placeholder="請輸入姓名"/>
-                <Input label="性別" :showCheckButton="true" :showInput="false" :buttonLabels="['男', '女']" />
+                <Input label="性別" :showCheckButton="true" :showInput="false" :buttonLabels="['男', '女']" checkboxType="radio" />
                 <Input label="身分證字號 (護照號碼)" placeholder="請輸入身分證字號" :showInput="true" />
                 <Input label="出生日期" placeholder="請輸入姓名" :showInput="false" :showDateInput="true"/>
                 <Input label="受僱日期（公司團體專用）" placeholder="請輸入姓名" :showInput="false" :showDateInput="true" />
@@ -40,15 +40,15 @@
                         <div>起始日期：<Date class="mt-2" /></div>
                         <div>截止日期：<Date class="mt-2" /></div>
                         <div class="flex flex-wrap gap-4">
-                            <Input label="是否需輪班" :showCheckButton="true" :showInput="false" :buttonLabels="['兩班制', '三班制', '四班制','否']" />
-                            <CheckButton label="其他" :showInput="true" />
+                            <Input label="是否需輪班" :showCheckButton="true" :showInput="false" :buttonLabels="['兩班制', '三班制', '四班制','否']" checkboxType="radio" />
+                            <CheckButton label="其他" :showInput="true" checkboxType="radio" />
                         </div>
                     </div>
                     
                 </li>
                 <li>
                     檢查原因
-                    <Input :showCheckButton="true" :showInput="false" :buttonLabels="['新進員工(受雇時)', '定期檢查']" />
+                    <Input :showCheckButton="true" :showInput="false" :buttonLabels="['新進員工(受雇時)', '定期檢查']" checkboxType="radio" />
                 </li>
                 <li>
                     <div class="inline-flex items-center">
@@ -134,9 +134,9 @@
             <div class="flex font-medium text-gray-900 md:items-center md:text-lg whitespace-nowrap">
                 懷孕：
                 <div class="flex flex-col gap-6 ml-2 md:flex-row">
-                    <CheckButton label="否" />
+                    <CheckButton checkboxType="radio" label="否" />
                     <div class="flex flex-row">
-                        <CheckButton label="是，"/>
+                        <CheckButton checkboxType="radio" label="是，"/>
                         <div class="flex flex-col sm:flex-row md:text-lg">
                           <div class="inline-flex items-center">
                             懷孕次數<Input class="mx-2" />，

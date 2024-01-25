@@ -10,7 +10,8 @@
         <div v-if="showCheckButton" class="grid grid-cols-3 gap-4 sm:grid-cols-4 lg:grid-cols-5">
             <CheckButton v-for="(buttonLabel, index) in buttonLabels"
             :key="index"
-            :label="buttonLabel"/>
+            :label="buttonLabel"
+            :checkboxType="checkboxType"/>
         </div>
         <div v-if="showDateInput">
             <Date />
@@ -25,6 +26,9 @@ export default {
         label: String,
         placeholder: String,
         buttonLabels: Array,
+        checkboxType: {
+          type: String,
+        },
         showInput: {
             type: Boolean,
             default: true

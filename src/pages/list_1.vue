@@ -10,7 +10,12 @@
             >
             <template #other>
               <div class="grid grid-cols-3 gap-x-6 gap-y-4 md:gap-x-12 md:grid-cols-4 lg:grid-cols-6">
-                <CheckButton  v-for="(label, labelIndex) in checkbox[index]" :key="labelIndex" :label="label" class="flex flex-wrap"  />
+                <CheckButton  
+                v-for="(label, labelIndex) in checkbox[index]" 
+                :key="labelIndex" 
+                :label="label" 
+                checkboxType="radio"
+                class="flex flex-wrap"  />
               </div>
             </template>
           </Question>
@@ -74,7 +79,7 @@ export default {
     const checkbox = ref([
       { 
         label1: '左手', 
-        label2: '左手' 
+        label2: '左手' ,
       },
       { 
         label1: '否',
