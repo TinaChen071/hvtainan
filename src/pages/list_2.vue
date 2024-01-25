@@ -24,11 +24,11 @@
           <!-- 作業經歷 -->
           <div>
             <h3 class="pl-4 mb-4 text-lg border-l-8 border-black md:text-2xl">
-                作業經歷(公司團體專用)
+                作業經歷（公司團體專用）
             </h3>
             <ol class="space-y-6 list-decimal list-inside md:text-lg">
                 <li>
-                    曾經從事的(前一份工作)<Input />
+                    曾經從事的（前一份工作）<Input />
                     <div class="grid items-center mt-2 md:grid-cols-2 gap-x-6 gap-y-2 whitespace-nowrap">
                         <div>起始日期：<Date class="mt-2" /></div>
                         <div>截止日期：<Date class="mt-2" /></div>
@@ -52,12 +52,12 @@
                 </li>
                 <li>
                     <div class="inline-flex items-center">
-                        檢查日過去1個月，平均每週上班總工時(含加班)為:<Input class="mx-2" />小時
+                        檢查日過去1個月，平均每週上班總工時（含加班）為:<Input class="mx-2" />小時
                     </div>
                 </li>
                 <li>
                     <div class="inline-flex items-center">
-                        檢查日過去6個月，平均每週上班總工時(含加班)為:<Input class="mx-2" />小時
+                        檢查日過去6個月，平均每週上班總工時（含加班）為:<Input class="mx-2" />小時
                     </div>
                 </li>
                 <li>
