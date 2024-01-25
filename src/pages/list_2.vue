@@ -1,7 +1,7 @@
 <template>
     <Layout title="健康檢查調查表">
       <template #content>
-        <div class="flex flex-col gap-6 mb-6 md:gap-8">
+        <div class="flex flex-col gap-6 mb-6 md:gap-10">
           <!-- 個人疲勞 -->
           <div>
             <h3 class="pl-4 mb-4 text-lg border-l-8 border-black md:text-2xl">
@@ -20,8 +20,6 @@
                 <Input label="通訊地址" placeholder="請輸入地址" class="sm:col-span-2"/>
             </div>
           </div>
-  
-          <div class="w-full border-t border-gray-300" />
   
           <!-- 作業經歷 -->
           <div>
@@ -70,8 +68,6 @@
             </ol>
           </div>
 
-          <div class="w-full border-t border-gray-300" />
-
           <!-- 既往病史 -->
           <div>
             <h3 class="pl-4 mb-4 text-lg border-l-8 border-black md:text-2xl">
@@ -92,8 +88,6 @@
                 <CheckButton label="以上皆無"/>
             </div>
           </div>
-  
-          <div class="w-full border-t border-gray-300" />
 
           <!-- 家族病史 -->
           <div>
@@ -113,8 +107,6 @@
                 <CheckButton label="以上皆無"/>
             </div>
           </div>
-  
-          <div class="w-full border-t border-gray-300" />
           
           <!-- 自覺症狀 -->
           <div>
@@ -133,8 +125,6 @@
                 <CheckButton label="以上皆無"/>
             </div>
           </div>
-  
-          <div class="w-full border-t border-gray-300" />
           
           <!-- 女性 -->
           <div>

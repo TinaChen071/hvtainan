@@ -1,17 +1,16 @@
 <template>
   <Layout title="肌肉骨骼症狀調查表">
     <template #content>
-      <div class="flex flex-col gap-6 md:gap-8">
+      <div class="flex flex-col gap-6 md:gap-10">
         <!-- 問題 -->
         <div>
           <Question v-for="(item, index) in question" :key="index"
-            :showCheckButton:="true"
             :title="item.title"
             :id="item.id" 
             >
             <template #other>
               <div class="grid grid-cols-3 gap-4 mt-2 md:grid-cols-4 lg:grid-cols-6">
-                <CheckButton v-for="(label, labelIndex) in checkbox[index]" :key="labelIndex" :label="label" class="flex flex-wrap " />
+                <CheckButton  v-for="(label, labelIndex) in checkbox[index]" :key="labelIndex" :label="label" class="flex flex-wrap mb-6"  />
               </div>
             </template>
           </Question>
@@ -43,11 +42,10 @@
         <Confirm />
 
         <!-- 按鈕 -->
-        <div class="flex items-center justify-center gap-4 mt-8">
+        <div class="flex items-center justify-center gap-4">
           <SecondaryButton label="取消" />
           <PrimaryButton label="送出" />
         </div>
-
       </div>
     </template>
   </Layout>

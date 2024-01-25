@@ -1,7 +1,7 @@
 <template>
-    <div class="relative flex items-center">
+    <div class="relative flex items-center ">
           <div class="flex items-center h-6">
-            <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-600" />
+            <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-600 " />
           </div>
           <div class="ml-3 text-sm leading-6">
             <label for="comments" class="flex font-medium text-gray-900 md:text-lg whitespace-nowrap">{{ label }}</label>

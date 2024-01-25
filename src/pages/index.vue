@@ -1,7 +1,8 @@
 <template>
   <Layout title="過勞量表">
     <template #content>
-      <div class="flex flex-col gap-6 md:gap-8">
+      <div class="flex flex-col gap-6 md:gap-10">
+        <!-- 說明 -->
         <div class="p-6 text-gray-500 bg-gray-200 rounded-xl">
           <h2>
             親愛的同仁您好:
@@ -13,33 +14,35 @@
         <!-- 個人疲勞 -->
         <div>
           <h3 class="pl-4 mb-4 text-lg border-l-8 border-black md:text-2xl">個人疲勞</h3>
-          <Question v-for="(item, index) in person" :key="index"
-            :showLikertScale="true" 
-            :title="item.title"
-            :id="item.id" 
-            />
+          <div class="flex flex-col gap-6">
+            <Question v-for="(item, index) in person" :key="index"
+              :showLikertScale="true" 
+              :title="item.title"
+              :id="item.id" 
+              />
+          </div>
         </div>
-
-        <div class="w-full border-t border-gray-300" />
 
         <!-- 工作疲勞 -->
         <div>
           <h3 class="pl-4 mb-4 text-lg border-l-8 border-black md:text-2xl">工作疲勞</h3>
-          <Question v-for="(item, index) in work" :key="index"
-            :showLikertScale="true" 
-            :title="item.title"
-            :id="item.id" 
-            />
+          <div class="flex flex-col gap-6">
+            <Question v-for="(item, index) in work" :key="index"
+              :showLikertScale="true" 
+              :title="item.title"
+              :id="item.id" 
+              />
+          </div>
         </div>
-      </div>
 
-      <!-- 確認 -->
-      <Confirm />
+        <!-- 確認 -->
+        <Confirm />
 
-      <!-- 按鈕 -->
-      <div class="flex items-center justify-center gap-4 mt-8">
-        <SecondaryButton label="取消" />
-        <PrimaryButton label="送出" />
+        <!-- 按鈕 -->
+        <div class="flex items-center justify-center gap-4">
+          <SecondaryButton label="取消" />
+          <PrimaryButton label="送出" />
+        </div>
       </div>
     </template>
   </Layout>
