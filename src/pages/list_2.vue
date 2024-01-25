@@ -1,7 +1,7 @@
 <template>
     <Layout title="健康檢查調查表">
       <template #content>
-        <div class="flex flex-col mb-6 space-y-8">
+        <div class="flex flex-col gap-6 mb-6 md:gap-8">
           <!-- 個人疲勞 -->
           <div>
             <h3 class="pl-4 mb-4 text-lg border-l-8 border-black md:text-2xl">

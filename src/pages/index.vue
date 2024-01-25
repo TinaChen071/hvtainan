@@ -1,7 +1,7 @@
 <template>
   <Layout title="過勞量表">
     <template #content>
-      <div class="flex flex-col space-y-8">
+      <div class="flex flex-col gap-6 md:gap-8">
         <div class="p-6 text-gray-500 bg-gray-200 rounded-xl">
           <h2>
             親愛的同仁您好:
@@ -9,8 +9,6 @@
             此「過勞量表」是勞動部針對過勞壓力反應編製;可協助在短時間內瞭解工作壓力引起的過勞反 應或過勞傾向。對於您所提供的資料，將只用於公司醫務室健康管理分析使用，而且絕對保密，請 安心填寫，謝謝!
           </h2>
         </div>
-  
-        <div class="w-full border-t border-gray-300" />
   
         <!-- 個人疲勞 -->
         <div>

@@ -1,7 +1,7 @@
 <template>
   <Layout title="肌肉骨骼症狀調查表">
     <template #content>
-      <div class="flex flex-col gap-8">
+      <div class="flex flex-col gap-6 md:gap-8">
         <!-- 問題 -->
         <div>
           <Question v-for="(item, index) in question" :key="index"
@@ -35,7 +35,7 @@
 
         <!-- 症狀圖表 -->
         <div>
-          <img src="@/assets/body.png" alt="" class="mx-auto mb-8 h-[32rem]">
+          <img src="@/assets/body.png" alt="" class="mx-auto mb-8 h-[32rem] aspect-auto">
           <Table :columns="columns" :data="data" />
         </div>
 
