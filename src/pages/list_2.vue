@@ -135,13 +135,15 @@
                 懷孕：
                 <div class="flex flex-col gap-6 ml-2 md:flex-row">
                     <CheckButton label="否" />
-                    <div class="flex items-center">
+                    <div class="flex flex-row">
                         <CheckButton label="是，"/>
-                        <div class="inline-flex items-center">
+                        <div class="flex flex-col sm:flex-row md:text-lg">
+                          <div class="inline-flex items-center">
                             懷孕次數<Input class="mx-2" />，
-                        </div>
-                        <div class="inline-flex items-center">
-                            生產次數<Input class="mx-2" />
+                          </div>
+                          <div class="inline-flex items-center">
+                              生產次數<Input class="mx-2" />
+                          </div>
                         </div>
                     </div>
                 </div>
