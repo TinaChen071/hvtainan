@@ -22,7 +22,7 @@ export default defineConfig({
         IconsResolver({
           prefix: false,
         }),
-        HeadlessUiResolver()
+        HeadlessUiResolver(),
       ]
     }),
     Icons()
