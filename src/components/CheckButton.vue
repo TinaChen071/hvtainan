@@ -15,6 +15,8 @@
 </template>  
 
 <script>
+import { ref, watch } from 'vue';
+
 export default {
   props: {
     label: {
@@ -22,19 +24,24 @@ export default {
       required: true,
     },
     showInput: {
-        type: Boolean,
-        default: false
+      type: Boolean,
+      default: false,
     },
   },
-  data() {
-    return {
-      checked: false,
+  setup(props, { emit }) {
+    const checked = ref(false);
+
+    const handleCheckboxChange = () => {
+      emit('checkbox-change', { label: props.label, checked: checked.value });
     };
-  },
-  methods: {
-    handleCheckboxChange() {
-      this.$emit('checkbox-change', { label: this.label, checked: this.checked });
-    },
+
+    watch(() => {
+    });
+
+    return {
+      checked,
+      handleCheckboxChange,
+    };
   },
 };
 </script>
