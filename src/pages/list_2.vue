@@ -7,7 +7,7 @@
             <h3 class="pl-4 mb-4 text-lg border-l-8 border-black md:text-2xl">
                 基本資料
             </h3>
-            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-6">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-6">
                 <Input label="姓名" placeholder="請輸入姓名"/>
                 <Input label="性別" :showCheckButton="true" :showInput="false" :buttonLabels="['男', '女']" />
                 <Input label="身分證字號 (護照號碼)" placeholder="請輸入身分證字號" :showInput="true" />
@@ -133,7 +133,7 @@
             </h3>
             <div class="flex font-medium text-gray-900 md:items-center md:text-lg whitespace-nowrap">
                 懷孕：
-                <div class="flex flex-col gap-4 ml-2 md:flex-row">
+                <div class="flex flex-col gap-6 ml-2 md:flex-row">
                     <CheckButton label="否" />
                     <div class="flex items-center">
                         <CheckButton label="是，"/>

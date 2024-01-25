@@ -3,7 +3,7 @@
     <template #content>
       <div class="flex flex-col gap-6 md:gap-10">
         <!-- 問題 -->
-        <div class="flex flex-col gap-6 md:gap-10">
+        <div class="flex flex-col gap-6">
           <Question v-for="(item, index) in question" :key="index"
             :title="item.title"
             :id="item.id" 
