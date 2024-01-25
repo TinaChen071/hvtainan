@@ -2,7 +2,7 @@
   <Layout title="過勞量表">
     <template #content>
       <div class="flex flex-col space-y-8">
-        <div class="p-6 text-gray-500 bg-gray-200 rounded-xl">
+        <div class="p-6 text-gray-400 bg-gray-200 rounded-xl">
           <h2>
             親愛的同仁您好:
             <br/>
