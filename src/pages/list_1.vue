@@ -3,14 +3,14 @@
     <template #content>
       <div class="flex flex-col gap-6 md:gap-10">
         <!-- 問題 -->
-        <div>
+        <div class="flex flex-col gap-6 md:gap-10">
           <Question v-for="(item, index) in question" :key="index"
             :title="item.title"
             :id="item.id" 
             >
             <template #other>
-              <div class="grid grid-cols-3 gap-4 mt-2 md:grid-cols-4 lg:grid-cols-6">
-                <CheckButton  v-for="(label, labelIndex) in checkbox[index]" :key="labelIndex" :label="label" class="flex flex-wrap mb-6"  />
+              <div class="grid grid-cols-3 gap-x-6 gap-y-4 md:gap-x-12 md:grid-cols-4 lg:grid-cols-6">
+                <CheckButton  v-for="(label, labelIndex) in checkbox[index]" :key="labelIndex" :label="label" class="flex flex-wrap"  />
               </div>
             </template>
           </Question>

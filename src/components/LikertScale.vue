@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-3 gap-4 mt-2 md:grid-cols-4 lg:grid-cols-6">
+  <div class="grid grid-cols-3 mt-2 md:grid-cols-4 lg:grid-cols-6">
     <CheckButton v-for="item in label" :key="item.value" :label="item.label" />
   </div>
 </template>
