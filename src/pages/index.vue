@@ -3,11 +3,11 @@
     <template #content>
       <div class="flex flex-col gap-6 md:gap-10">
         <!-- 說明 -->
-        <div class="p-6 text-gray-500 bg-gray-200 rounded-xl">
+        <div class="p-4 tracking-wider text-gray-500 bg-gray-200 md:px-8 rounded-xl">
           <h2>
             親愛的同仁您好:
             <br/>
-            此「過勞量表」是勞動部針對過勞壓力反應編製;可協助在短時間內瞭解工作壓力引起的過勞反 應或過勞傾向。對於您所提供的資料，將只用於公司醫務室健康管理分析使用，而且絕對保密，請 安心填寫，謝謝!
+            此「過勞量表」是勞動部針對過勞壓力反應編製；可協助在短時間內瞭解工作壓力引起的過勞反應或過勞傾向。對於您所提供的資料，將只用於公司醫務室健康管理分析使用，而且絕對保密，請安心填寫，謝謝!
           </h2>
         </div>
   

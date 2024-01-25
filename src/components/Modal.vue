@@ -15,7 +15,7 @@
                   <p>
                     《富盈診所資料保護政策及顧客之個人資料保護權益》
                   </p>
-                <button type="button" class=" hover:text-gray-500" @click="closeModal">
+                <button type="button" class="transition-colors  hover:text-white" @click="closeModal">
                   <span class="sr-only">Close</span>
                   <fa6-solid-xmark />
                 </button>
