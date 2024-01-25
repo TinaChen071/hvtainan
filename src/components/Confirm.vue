@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center p-4 bg-blue-100 md:px-8 rounded-xl">
-        <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="w-4 h-4 mr-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-600" />
+        <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="w-4 h-4 mr-4 text-blue-600 border-gray-300 rounded focus:ring-blue-600" />
         <p>
             我已明確了解
             <span 
