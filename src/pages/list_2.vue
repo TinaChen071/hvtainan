@@ -159,30 +159,36 @@
         </div>
       </template>
     </Layout>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        person: [
-          { id: 1, title: '你常覺得疲勞嗎?' },
-          { id: 2, title: '你常覺得身體上體力透支嗎?' },
-          { id: 3, title: '你常覺得情緒上心力交瘁嗎?' },
-          { id: 4, title: '你常會覺得，「我快要撐不下去了」嗎?' },
-          { id: 5, title: '你常覺得精疲力竭嗎?' },
-          { id: 6, title: '你常常覺得虛弱，好像快要生病了嗎?' },
-        ],
-        work: [
-          { id: 1, title: '你的工作會令人情緒上心力交瘁嗎?' },
-          { id: 2, title: '你的工作會讓你覺得快要累垮了嗎?' },
-          { id: 3, title: '你的工作會讓你覺得挫折嗎?' },
-          { id: 4, title: '工作一整天之後，你覺得精疲力竭嗎?' },
-          { id: 5, title: '上班之前只要想到又要工作一整天，你就覺得沒力嗎?' },
-          { id: 6, title: '上班時你會覺得每一刻都很難熬嗎?' },
-          { id: 7, title: '不工作的時候，你有足夠的精力陪朋友或家人嗎?' },
-        ]
-      };
-    }
-  };
-  </script>
+</template>
+
+<script>
+import { ref } from 'vue';
+
+export default {
+  setup() {
+    const person = ref([
+      { id: 1, title: '你常覺得疲勞嗎?' },
+      { id: 2, title: '你常覺得身體上體力透支嗎?' },
+      { id: 3, title: '你常覺得情緒上心力交瘁嗎?' },
+      { id: 4, title: '你常會覺得，「我快要撐不下去了」嗎?' },
+      { id: 5, title: '你常覺得精疲力竭嗎?' },
+      { id: 6, title: '你常常覺得虛弱，好像快要生病了嗎?' },
+    ]);
+
+    const work = ref([
+      { id: 1, title: '你的工作會令人情緒上心力交瘁嗎?' },
+      { id: 2, title: '你的工作會讓你覺得快要累垮了嗎?' },
+      { id: 3, title: '你的工作會讓你覺得挫折嗎?' },
+      { id: 4, title: '工作一整天之後，你覺得精疲力竭嗎?' },
+      { id: 5, title: '上班之前只要想到又要工作一整天，你就覺得沒力嗎?' },
+      { id: 6, title: '上班時你會覺得每一刻都很難熬嗎?' },
+      { id: 7, title: '不工作的時候，你有足夠的精力陪朋友或家人嗎?' },
+    ]);
+
+    return {
+      person,
+      work,
+    };
+  },
+};
+</script>

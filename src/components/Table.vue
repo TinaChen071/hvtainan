@@ -32,37 +32,42 @@
 </template>
 
 <script>
+import { ref } from 'vue';
+
 export default {
-    data() {
+  setup() {
+    const table = ref([
+      { key: '0', label: '' },
+      { key: '1', label: '不痛 0' },
+      { key: '2', label: '微痛 1' },
+      { key: '3', label: '中等疼痛 2' },
+      { key: '4', label: '劇痛 3' },
+      { key: '5', label: '非常劇痛 4' },
+      { key: '6', label: '極度劇痛 5' },
+    ]);
+
+    const column = ref([
+      { id: 1, title: '頸'},
+      { id: 2, title: '左肩'},
+      { id: 3, title: '右肩'},
+      { id: 4, title: '左手肘/左前臂'},
+      { id: 5, title: '右手肘/右前臂'},
+      { id: 6, title: '左手/左手腕'},
+      { id: 7, title: '右手/右手腕'},
+      { id: 8, title: '上背'},
+      { id: 9, title: '下背'},
+      { id: 10, title: '左臀/左大腿'},
+      { id: 11, title: '右臀/右大腿'},
+      { id: 12, title: '左膝'},
+      { id: 13, title: '右膝'},
+      { id: 14, title: '左腳/左腳踝'},
+      { id: 15, title: '右腳/右腳踝'},
+    ]);
+
     return {
-        // 欄位
-        table: [
-            { key: '0', label: '' },
-            { key: '1', label: '不痛 0' },
-            { key: '2', label: '微痛 1' },
-            { key: '3', label: '中等疼痛 2' },
-            { key: '4', label: '劇痛 3' },
-            { key: '5', label: '非常劇痛 4' },
-            { key: '6', label: '極度劇痛 5' },
-        ],
-        column: [
-            { id: 1, title: '頸'},
-            { id: 2, title: '左肩'},
-            { id: 3, title: '右肩'},
-            { id: 4, title: '左手肘/左前臂'},
-            { id: 5, title: '右手肘/右前臂'},
-            { id: 6, title: '左手/左手腕'},
-            { id: 7, title: '右手/右手腕'},
-            { id: 8, title: '上背'},
-            { id: 9, title: '下背'},
-            { id: 10, title: '左臀/左大腿'},
-            { id: 11, title: '右臀/右大腿'},
-            { id: 12, title: '左膝'},
-            { id: 13, title: '右膝'},
-            { id: 14, title: '左腳/左腳踝'},
-            { id: 15, title: '右腳/右腳踝'},
-        ]
-    }
-    }
-}
+      table,
+      column,
+    };
+  },
+};
 </script>
