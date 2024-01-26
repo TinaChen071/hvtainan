@@ -139,20 +139,18 @@
             <h3 class="pl-4 mb-4 text-lg border-l-8 border-black md:text-2xl">
                 四、女性請務必回答
             </h3>
-            <div class="flex font-medium text-gray-900 md:items-center md:text-lg whitespace-nowrap">
+            <div class="flex font-medium text-gray-900 sm:items-center md:text-lg whitespace-nowrap">
                 懷孕：
-                <div class="flex flex-col gap-4 ml-2 md:gap-6 sm:items-center md:flex-row">
+                <div class="flex flex-col ml-2 sm:items-center sm:flex-row">
                   <RadioButtonGroup :options="['否', '是']" class="flex gap-6" />
-                    <div class="flex flex-row">
-                        <div class="flex flex-col sm:flex-row md:text-lg">
-                          <div class="inline-flex items-center">
-                            懷孕次數<Input class="mx-2" />，
-                          </div>
-                          <div class="inline-flex items-center">
-                              生產次數<Input class="mx-2" />
-                          </div>
-                        </div>
-                    </div>
+                  <span class="hidden sm:block">，</span>
+                  <div class="inline-flex items-center">
+                    懷孕次數<Input class="mx-2" />
+                  </div>
+                  <span class="hidden sm:block">，</span>
+                  <div class="inline-flex items-center">
+                      生產次數<Input class="mx-2" />
+                  </div>
                 </div>
             </div>
           </div>

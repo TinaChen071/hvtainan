@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center h-6">
-      <label v-for="(option, index) in options" :key="index" class="md:text-lg whitespace-nowrap">
+      <label v-for="(option, index) in options" :key="index" class="flex items-center md:text-lg whitespace-nowrap">
         <input
           type="radio"
           :name="groupName"

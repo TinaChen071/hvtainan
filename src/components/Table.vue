@@ -69,7 +69,7 @@ export default {
       { id: 14, title: '左腳/左腳踝'},
       { id: 15, title: '右腳/右腳踝'},
     ]);
-
+    
     return {
       table,
       column,
