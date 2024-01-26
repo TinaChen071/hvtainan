@@ -4,23 +4,13 @@
       <div class="flex flex-col gap-6 md:gap-10">
         <!-- 問題 -->
         <div class="flex flex-col gap-6">
-          <Question v-for="(item, index) in question" :key="index"
-            :title="item.title"
-            :id="item.id" 
-            >
-            <template #other>
-              <div class="grid grid-cols-3 gap-x-6 gap-y-4 md:gap-x-12 md:grid-cols-4 lg:grid-cols-6">
-                <CheckButton  
-                v-for="(label, labelIndex) in checkbox[index]" 
-                :key="labelIndex" 
-                :label="label" 
-                checkboxType="radio"
-                class="flex flex-wrap"  />
-              </div>
-            </template>
-          </Question>
-        </div>
-
+            <div v-for="(question, index) in question" :key="index" >
+              <p class="mb-2 md:text-lg">
+                {{ question.id }}.{{ question.title }}
+              </p>
+              <RadioButtonGroup :options="question.dataset"  class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-6 gap-y-4 md:gap-x-12 h-fit" />
+            </div>
+          </div>
         <!-- 說明 -->
         <div class="flex flex-col items-start p-4 bg-gray-100 lg:flex-row md:px-8 rounded-xl">
           <h3 class="mb-2 mr-4 md:text-lg">填寫說明</h3>
@@ -63,37 +53,24 @@ export default {
   setup() {
     const question = ref([
       { 
-        id: 1, 
-        title: '您平常使用電腦、滑鼠慣用手為?', 
+        id: 1,
+        name: 'question 1',
+        title: ' 您平常使用電腦、滑鼠慣用手為?', 
+        dataset: ['左手', '右手'] 
       },
       { 
-        id: 2, 
-        title: '您在過去的 1 年內，身體是否有長達 2 星期以上的疲勞、酸痛、發麻、刺痛等不舒服，或關節活動受到限制?',
+        id: 2,
+        name: 'question 2',
+        title: ' 您在過去的 1 年內，身體是否有長達 2 星期以上的疲勞、酸痛、發麻、刺痛等不舒服，或關節活動受到限制?', 
+        dataset: ['否', '是']
       },
       { 
-        id: 3, 
-        title: '下表的身體部位酸痛、不適或影響關節活動之情形持續多久時間?',
+        id: 3,
+        name: 'question 3',
+        title: ' 下表的身體部位酸痛、不適或影響關節活動之情形持續多久時間?', 
+        dataset: ['1 個月', '3 個月', '6 個月', '1 年', '3 年', '3 年以上']
       },
-    ]);
-
-    const checkbox = ref([
-      { 
-        label1: '左手', 
-        label2: '左手' ,
-      },
-      { 
-        label1: '否',
-        label2: '是',
-      },
-      { 
-        label1: '1 個月',
-        label2: '3 個月',
-        label3: '6 個月',
-        label4: '1 年',
-        label5: '3 年',
-        label6: '3 年以上',
-      },
-    ]);
+    ])
 
     const info = ref([
       { 
@@ -124,8 +101,7 @@ export default {
 
     return {
       question,
-      checkbox,
-      info,
+      info
     };
   },
 };

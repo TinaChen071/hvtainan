@@ -11,7 +11,7 @@
             <CheckButton v-for="(buttonLabel, index) in buttonLabels"
             :key="index"
             :label="buttonLabel"
-            :checkboxType="checkboxType"/>
+            />
         </div>
         <div v-if="showDateInput">
             <Date />
@@ -26,9 +26,6 @@ export default {
         label: String,
         placeholder: String,
         buttonLabels: Array,
-        checkboxType: {
-          type: String,
-        },
         showInput: {
             type: Boolean,
             default: true
