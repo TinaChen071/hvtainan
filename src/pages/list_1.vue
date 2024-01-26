@@ -8,7 +8,7 @@
               <p class="mb-2 md:text-lg">
                 {{ question.id }}.{{ question.title }}
               </p>
-              <RadioButtonGroup :options="question.dataset"  class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-6 gap-y-4 md:gap-x-12 h-fit" />
+              <RadioButtonGroup :options="question.dataset"  class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-6 gap-y-4 md:gap-x-12 h-fit" />
             </div>
           </div>
         <!-- 說明 -->
