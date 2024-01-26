@@ -14,7 +14,7 @@
               </tr>
           </thead>
           <tbody>
-            <tr v-for="item in column" :key="item.key">
+            <tr v-for="item in column" :key="item">
                 <td class="p-5 text-center bg-blue-100">
                     {{ item.title }}
                 </td>
@@ -23,10 +23,14 @@
                 class="p-5 text-center bg-gray-100"
                 >
                   <div class="ml-4">
-                    <RadioButtonGroup  :options="['']" class="flex justify-center" />
+                    <input
+                      id=""
+                      name=""
+                      type="radio"
+                      class="w-4 h-4 mr-3 text-blue-600 border-gray-300 rounded-full focus:ring-blue-600 "
+                    />
                   </div>
                 </td>
-                
             </tr>
           </tbody>
       </table>

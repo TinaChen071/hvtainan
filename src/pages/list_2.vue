@@ -42,10 +42,11 @@
                     <div class="grid items-center mt-2 md:grid-cols-2 gap-x-6 gap-y-2 whitespace-nowrap">
                         <div>起始日期：<Date class="mt-2" /></div>
                         <div>截止日期：<Date class="mt-2" /></div>
-                        <div class="">
+                        <div class="sm:col-span-2">
                           <Input label="是否需輪班" :showInput="false" />
                           <div class="flex flex-wrap gap-4">
-                            <RadioButtonGroup :options="['兩班制', '三班制', '四班制', '否']" class="flex gap-6" />
+                            <RadioButtonGroup :options="['兩班制', '三班制', '四班制', '否']"
+                            class="flex gap-6" />
                             <RadioButtonGroup :options="['其他']" :showInput="true" 
                             />
                           </div>
