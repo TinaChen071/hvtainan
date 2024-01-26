@@ -94,6 +94,7 @@ export default {
         id: 1,
         name: 'work 1',
         title: ' 你的工作會令人情緒上心力交瘁嗎?', 
+        dataset: ['總是', '常常', '有時候', '不常', '從未或幾乎從未'] 
       },
       { 
         id: 2,
@@ -131,8 +132,6 @@ export default {
 
     
     return {
-      person,
-      work,
       person,
       work,
     };
