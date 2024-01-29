@@ -44,7 +44,7 @@
                         <div>截止日期：<Date class="mt-2" /></div>
                         <div class="sm:col-span-2">
                           <Input label="是否需輪班" :showInput="false" />
-                          <div class="flex flex-wrap gap-4">
+                          <div class="flex flex-wrap gap-4 md:gap-0">
                             <RadioButtonGroup :options="['兩班制', '三班制', '四班制', '否']"
                             class="flex gap-6" />
                             <RadioButtonGroup :options="['其他']" :showInput="true" 
